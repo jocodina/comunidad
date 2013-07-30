@@ -1,0 +1,16 @@
+/* CSS Document */
+body{padding:0; margin:0; }
+#header-late2011-small-wrapper{ background:#000; overflow:hidden; height:32px; padding-top:14px;  border-bottom: 1px solid #C3C3C3;}
+#header-late2011{ font:11px/1.4em Arial,Helvetica,sans-serif; color:#999;  width:980px; margin:0 auto;  position:relative; }
+#header-late2011 a{ font:11px/1.4em Arial,Helvetica,sans-serif; color:#999;  text-decoration:none; }
+#header-late2011 a img{ border:none; }
+#header-late2011 a:hover,#header-late2011 a.destacado{ color:#fff; }
+#hl2011-logo{  margin-right:15px;  margin-top:-6px;  display:block; width:137px; height:30px; background:url("../images/vtrlogochico.png") no-repeat yellow; overflow:hidden; position:absolute; right:15px; top:0px;}
+
+.color0 #hl2011-logo{ background-position:0 -35px !important; }
+.color1 #hl2011-logo{ background-position:0 -70px !important; }
+.color2 #hl2011-logo{ background-position:0 -105px !important; }
+.color3 #hl2011-logo{ background-position:0 -140px !important; }
+.color4 #hl2011-logo{ background-position:0 -175px !important; }
+.color5 #hl2011-logo{ background-position:0 -210px !important; }
+

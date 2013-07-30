@@ -1,0 +1,64 @@
+.container { padding-left: 20px; padding-right: 20px; }
+.row { width: 100%; max-width: 1140px; margin: 0 auto; }
+.row:before, .row:after { content: ""; display: table; }
+.row:after { clear: both; }
+.row { *zoom: 1; }
+.row [class*="column"], .flexCol {
+    display: block;
+    float: left;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+.column1, .flexCol { width: 6.5%; }
+.column2, .flexCol { width: 15%; }
+.column3, .flexCol { width: 23.5%; }
+.column4, .flexCol { width: 32%; }
+.column5, .flexCol { width: 40.5%; }
+.column6, .flexCol { width: 49%; }
+.column7, .flexCol { width: 57.5%; }
+.column8, .flexCol { width: 66%; }
+.column9, .flexCol { width: 74.5%; }
+.column10, .flexCol { width: 83%; }
+.column11, .flexCol { width: 91.5%; }
+.column12, .flexCol { width: 100%; }
+[class*="column"].ultima { margin-right: 0px; }
+
+
+/*******************************************************************************
+Tablets general ****************************************************************
+*******************************************************************************/
+@media only screen
+and (max-width : 1025px)
+and (min-width : 641px) {}
+
+
+/*******************************************************************************
+Tablets Vertical ***************************************************************
+*******************************************************************************/
+@media only screen
+and (max-width : 800px)
+and (min-width : 641px)
+and (orientation : portrait) {}
+
+
+/*******************************************************************************
+Smartphones ********************************************************************
+*******************************************************************************/
+@media only screen
+and (max-width : 640px) {
+    .row [class*="column"] {
+        width: 100%;
+        float: none;
+        margin-right: 0px;
+    }
+}
+
+
+/*******************************************************************************
+Retina *************************************************************************
+*******************************************************************************/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {}

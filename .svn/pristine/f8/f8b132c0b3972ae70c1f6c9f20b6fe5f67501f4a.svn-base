@@ -1,0 +1,1296 @@
+a{
+  outline: 0;
+}
+body { 
+    font-family: helvetica, arial, sans-serif;
+    margin: 0px;
+    /*El contenido no se puede arrastrar */
+    -webkit-user-select: none;
+    /*El texto no se puede ajustar */
+    -webkit-text-size-adjust: none;
+    background: #313131;
+    background: -moz-linear-gradient(left, #313131 0%, #313131 46%, #222222 99%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#313131), color-stop(46%,#313131), color-stop(99%,#222222));
+    background: -webkit-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: -o-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: -ms-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#222222',GradientType=1 );
+}
+
+.ajaxloader {
+    display:none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#infoDragg {
+    position:relative;
+}
+
+/*--------------------------------------------------------------------------------SEARCH--*/
+
+#searchHeader{
+    width: 100%;
+    overflow: hidden;
+    display:none;
+    height: 40px;
+    background: url('../img/mobile/headerBg.jpg') repeat-x bottom #000;
+}
+
+.searchForm {
+    width: 70%;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
+    padding-left:5px;
+    color:#000;
+    position: absolute;
+    left:10px;
+    top:6px;
+    height:25px;
+}
+
+.searchCancel {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 1%, #434343 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#666666), color-stop(100%,#434343));
+    background: -webkit-linear-gradient(top, #666666 1%,#434343 100%);
+    background: -o-linear-gradient(top, #666666 1%,#434343 100%);
+    background: -ms-linear-gradient(top, #666666 1%,#434343 100%);
+    background: linear-gradient(top, #666666 1%,#434343 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#434343',GradientType=0 );
+    color:#fff;
+    padding: 7px;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    font-size: 12px;
+}
+
+.searchImg {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px
+}
+
+.searchTitle {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 7px !important;
+}
+
+/*--------------------------------------------------------------------------------HEADER---*/
+header {
+    display:block;
+    width:100%;
+}
+
+#encabezado #selectChange {
+    position: absolute;
+    right: 40px;
+    top: 7px;
+}
+
+.header-logo-guia {
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 7px;
+}
+
+.header-logo-vtr {
+    display: block;
+    position:absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#itemsConfig{
+    position:relative;
+    width:100%;
+    height: 35px;
+    background: url('../img/mobile/headerBg.jpg') repeat-x bottom #000;
+    overflow: hidden;
+    display:block;
+}
+
+.configMenu {
+    position: absolute;
+    right: 10px;
+}
+
+.configMenu li{
+    display: inline-block;
+    text-indent: -99999px;
+    height: 32px;
+}
+
+.configMenu li a{
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+.configMenu li a.favoritos {
+    background: url('../img/mobile/watchlist.png') no-repeat top center;
+}
+
+.configMenu li a.searchBtn {
+    background: url('../img/mobile/lupa.jpg') no-repeat top center;
+}
+
+.configMenu li a.favoritos.current {
+    background: url('../img/mobile/watchCurrent.png') no-repeat top center;
+}
+
+.configMenu li a.ubicacion {
+    background: url('../img/mobile/ubicacion.png') no-repeat top center;
+}
+
+.configMenu li a.ajustes {
+    background: url('../img/mobile/ajustesIcono.jpg') no-repeat top center;
+}
+
+.configMenu li a.ubicacion.current {
+    background: url('../img/mobile/ubicacionCurrent.png') no-repeat top center;
+}
+
+.l160{
+        width: 160px;
+        height: 1px;
+        border: 1px solid red;
+}
+.l50{
+        width: 50%;
+        height: 1px;
+        border: 1px solid white;
+}
+header #nav{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    background-color: #DEDEDE;
+    position:relative;
+    border-bottom:1px solid #4E4B4E;
+    border-top:1px solid #4E4B4E;
+    background: background: #333333;
+                background: -moz-linear-gradient(top, #333333 25%, #333333 38%, #000000 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#333333), color-stop(38%,#333333), color-stop(100%,#000000));
+                background: -webkit-linear-gradient(top, #333333 25%,#333333 38%,#000000 100%);
+                background: -o-linear-gradient(top, #333333 25%,#333333 38%,#000000 100%);
+                background: -ms-linear-gradient(top, #333333 25%,#333333 38%,#000000 100%);
+                background: linear-gradient(top, #333333 25%,#333333 38%,#000000 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 );
+}
+
+header h1 {
+    color: #E1E1E1;
+    padding: 10px;
+}
+
+header #nav ul{
+    width: 100%;
+}
+header #nav ul li {
+    display: block;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+header #nav ul li:last-child {
+    float:right;
+}
+
+header #nav ul li a{
+    display: block;
+    color: #999;
+    padding: 10px 0px 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: #000 2px 2px 2px;
+    font-size: 13px;
+}
+
+@media all and (max-width: 290px) {
+    header #nav ul li a{
+        font-size: 11px;
+    }
+}
+
+header #nav ul li a:active{
+    color: #2C9AD0;
+}
+header #nav ul li a.active{
+    color:#2C9AD0; 
+}
+/*--------------------------------------------------------------------------------Fin HEADER--*/
+
+/*--------------------------------------------------------------------------------DESTACADOS--*/
+
+ul#fondos {
+    padding: 10px 10px 0 10px;
+}
+
+ul#fondos li{
+    position: relative;
+}
+
+li.big {
+    width:100%;
+    max-width: 640px;
+}
+
+li.small {
+    width:48%;
+}
+
+.big{
+    display: block;
+    clear: both;
+    width: 298px;
+    position: relative;
+}
+
+li.big img {
+   width:100%;
+   max-width: 640px;
+   height: auto;
+}
+
+li.small img {
+   width:100%;
+   height: auto;
+}
+
+.small{
+	display: block;
+	float: left;
+	width: 144px;
+	position: relative;
+        margin-top: 8px;
+        margin-bottom: 10px;
+}
+
+.small.first {
+    float:left;
+}
+
+.small.second {
+    float:right;
+}
+
+.roundedCorners {
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+        border: 1px solid #ccc;
+}
+
+li.destacados .destTitle {
+    background: url('../img/mobile/goIcon.png') no-repeat 95% center,
+                url('../img/mobile/destacadobg.png') repeat;
+    bottom: 2px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    width: 100%;
+}
+
+li.destacados.big .destTitle{
+    min-height: 40px;
+    font-size: 14px;
+}
+
+li.destacados.small .destTitle{
+    min-height: 30px;
+    font-size: 12px;
+}
+
+li.destacados span.title {
+    width: 80%;
+    padding: 10px 10px 3px;
+    display: block;
+    color:#50B289;
+}
+
+li.destacados span.subtitle {
+   display: block;
+   padding: 3px 10px 10px;
+   width: 80%;
+   font-size: 12px;
+   font-weight: normal;
+}
+
+
+/*--------------------------------------------------------------------------------CATEGORIAS--*/
+
+.publi {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 51px;
+}
+.gen-list {
+    list-style-type: none;
+}
+.gen-list .cate {
+    overflow: hidden;
+    display: block;
+    border-top: 1px solid #474948;
+    border-bottom: 1px solid #000;
+}
+
+.gen-list .cate.pref {
+    background: url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+    padding-left: 10px;
+}
+
+.tab .num_1{
+    background: url('../img/mobile/serieIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_2{
+    background: url('../img/mobile/infantilIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_3{
+    background: url('../img/mobile/deporteIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_4{
+    background: url('../img/mobile/musicaIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_5{
+    background: url('../img/mobile/tendenciaIcon.png') no-repeat 20px 44%;
+}
+.tab .num_6{
+    background: url('../img/mobile/culturaIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_7{
+    background: url('../img/mobile/noticiasIcon.png') no-repeat 20px 44%;
+}
+.tab .num_8{
+    background: url('../img/mobile/nacionalIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_9{
+    background: url('../img/mobile/internacionalIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_10{
+    background: url('../img/mobile/adultoIcon.png') no-repeat 20px 44%; 
+}
+.tab .num_11{
+    background: url('../img/mobile/premiumIcon.png') no-repeat 20px 44% ;
+}
+.tab .num_12 {
+    background: url('../img/mobile/hdIcon.png') no-repeat 20px 44%;
+}
+.tab .num_13{
+    background: url('../img/mobile/compraEventosIcon.png') no-repeat 20px 44% ;
+}
+
+
+/*.svg .tab .num_1{
+    background: url('../img/mobile/series.svg') no-repeat 20px 44% ;
+}
+.svg .tab .num_2{
+    background: url('../img/mobile/infantilIcon.svg') no-repeat 20px 44%;
+}
+.svg .tab .num_3{
+    background: url('../img/mobile/deporteIcon.svg') no-repeat 20px 44%;
+}
+.svg .tab .num_4{
+    background: url('../img/mobile/musicaIcon.svg') no-repeat 20px 44%;
+}
+.svg .tab .num_5{
+    background: url('../img/mobile/tendenciaIcon.svg') no-repeat 20px 44% ;
+}
+.svg .tab .num_6{
+    background: url('../img/mobile/culturaIcon.svg') no-repeat 20px 44% ;
+}
+.svg .tab .num_7{
+    background: url('../img/mobile/noticiasIcon.svg') no-repeat 20px 44%;
+}
+.svg .tab .num_8{
+    background: url('../img/mobile/nacionalIcon.svg') no-repeat 20px 44% ;
+}
+.svg .tab .num_9{
+    background: url('../img/mobile/internacionalIcon.svg') no-repeat 20px 44% ;
+}
+.svg .tab .num_10{
+    background: url('../img/mobile/adultoIcon.svg') no-repeat 20px 44% ; 
+}
+.svg .tab .num_11{
+    background: url('../img/mobile/premiumIcon.svg') no-repeat 20px 44% ;
+}
+.svg .tab .num_12 {
+    background: url('../img/mobile/hdIcon.svg') no-repeat 20px 44% ;
+}
+.svg .tab .num_13 {
+    background: url('../img/mobile/compraEventosIcon.svg') no-repeat 20px 44% ;
+}*/
+
+.tab prefList.num_1{
+    background: url('../img/mobile/serieIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_2{
+    background: url('../img/mobile/infantilIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_3{
+    background: url('../img/mobile/deporteIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_4{
+    background: url('../img/mobile/musicaIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_5{
+    background: url('../img/mobile/tendenciaIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_6{
+    background: url('../img/mobile/culturaIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_7{
+    background: url('../img/mobile/noticiasIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_8{
+    background: url('../img/mobile/nacionalIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_9{
+    background: url('../img/mobile/internacionalIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_10{
+    background: url('../img/mobile/adultoIcon.png') no-repeat 20px 44% #2C9AD0; 
+}
+.tab prefList.num_11{
+    background: url('../img/mobile/premiumIcon.png') no-repeat 20px 44% #2C9AD0 ;
+}
+.tab prefList.num_12 {
+    background: url('../img/mobile/hdIcon.png') no-repeat 20px 44% #2C9AD0;
+}
+.tab prefList.num_12 {
+    background: url('../img/mobile/compraEventosIcon.png') no-repeat 20px 44% #2C9AD0;
+}
+
+/*.svg .tab prefList.num_1{
+    background: url('../img/mobile/series.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_2{
+    background: url('../img/mobile/infantilIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_3{
+    background: url('../img/mobile/deporteIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_4{
+    background: url('../img/mobile/musicaIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_5{
+    background: url('../img/mobile/tendenciaIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_6{
+    background: url('../img/mobile/culturaIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_7{
+    background: url('../img/mobile/noticiasIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_8{
+    background: url('../img/mobile/nacionalIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_9{
+    background: url('../img/mobile/internacionalIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_10{
+    background: url('../img/mobile/adultoIcon.svg') no-repeat 20px 44% #2C9AD0; 
+}
+.svg tab prefList.num_11{
+    background: url('../img/mobile/premiumIcon.svg') no-repeat 20px 44% #2C9AD0 ;
+}
+.svg .tab prefList.num_12 {
+    background: url('../img/mobile/hdIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab prefList.num_13 {
+    background: url('../img/mobile/compraEventosIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+
+.svg .gen-list .cate a.num_1{
+    background: url('../img/mobile/series.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_2{
+    background: url('../img/mobile/infantilIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_3{
+    background: url('../img/mobile/deporteIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_4{
+    background: url('../img/mobile/musicaIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_5{
+    background: url('../img/mobile/tendenciaIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_6{
+    background: url('../img/mobile/culturaIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_7{
+    background: url('../img/mobile/noticiasIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_8{
+    background: url('../img/mobile/nacionalIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_9{
+    background: url('../img/mobile/internacionalIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_10{
+    background: url('../img/mobile/adultoIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_11{
+    background: url('../img/mobile/premiumIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_12{
+    background: url('../img/mobile/hdIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}
+.svg .gen-list .cate a.num_13{
+    background: url('../img/mobile/compraEventosIcon.svg') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.svg') no-repeat 97% 50%;
+}*/
+
+.gen-list .cate a.num_1{
+    background: url('../img/mobile/serieIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_2{
+    background: url('../img/mobile/infantilIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_3{
+    background: url('../img/mobile/deporteIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_4{
+    background: url('../img/mobile/musicaIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_5{
+    background: url('../img/mobile/tendenciaIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_6{
+    background: url('../img/mobile/culturaIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_7{
+    background: url('../img/mobile/noticiasIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_8{
+    background: url('../img/mobile/nacionalIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_9{
+    background: url('../img/mobile/internacionalIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_10{
+    background: url('../img/mobile/adultoIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_11{
+    background: url('../img/mobile/premiumIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_12{
+    background: url('../img/mobile/hdIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+.gen-list .cate a.num_13{
+    background: url('../img/mobile/compraEventosIcon.png') no-repeat 15px 50%,
+                url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+}
+
+
+.gen-list .cate:first-child {
+    border-top: 0 none;
+} 
+
+.gen-list .cate a, .gen-list .cate label {
+    background: url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+    display:block;
+    width: 70%;
+    height: 16px;
+    padding: 15px 15%;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow:#000 1px 1px 1px;
+}
+
+.gen-list .cate a.pref {
+    padding:15px 10px;
+    background: none;
+}
+
+.gen-list .cate:active {
+    background: #2C9AD0;
+}
+
+/*.svg .tab .cate.num_1:active {
+    background: url('../img/mobile/series.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_2:active {
+    background: url('../img/mobile/infantilIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_3:active {
+    background: url('../img/mobile/deporteIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_4:active {
+    background: url('../img/mobile/musicaIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_5:active {
+    background: url('../img/mobile/tendenciaIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_6:active {
+    background: url('../img/mobile/culturaIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_7:active {
+    background: url('../img/mobile/noticiasIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_8:active {
+    background: url('../img/mobile/nacionalIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_9:active {
+    background: url('../img/mobile/internacionalIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_10:active {
+    background: url('../img/mobile/adultoIcon.svg') no-repeat 20px 44% #2C9AD0; 
+}
+.svg .tab .cate.num_11:active {
+    background: url('../img/mobile/premiumIcon.svg') no-repeat 20px 44% #2C9AD0;
+}
+.svg .tab .cate.num_12:active  {
+    background: url('../img/mobile/hdIcon.svg') no-repeat 20px 44% #2C9AD0;
+}*/
+
+
+/*--------------------------------------------------------------------------------CANALES--*/
+
+
+.content .listin {
+    list-style-type: none;
+}
+.content .listin .canal,  .content .listin .search, .content .listin .programa {
+    display:block;
+}
+.content .listin .search {
+	padding: 10px;
+	text-align: center;
+	background: #333;
+
+}
+.content .listin .search input{
+	width: 260px;
+	height: 30px;
+	font-size: 25px;
+}
+
+.content .img-canal {
+    display: block;
+    float: left;
+    margin-right: 25px;
+    width: 48px;
+    height: 48px;
+}
+
+li.canal, li.programa {
+    border-top: 1px solid #474948;
+    border-bottom: 1px solid #000;
+    list-style: none;
+}
+
+.content .canal a, .content .programa a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    display:block;
+    overflow: hidden;
+    padding: 5px;
+    font-size: 14px;
+    background: url('../img/mobile/goIcon.png') no-repeat 97% 50%;
+    text-shadow: #000 1px 1px 1px;
+}
+.content .canal a .meta-data{
+    position: absolute;
+    top: 20px;
+    left:67px;    
+}
+.content .canal a .meta-data + .meta-data{
+    left:105px;
+}
+.content .canal a .meta-data.channel-number{
+    top: 15px;    
+    padding : 5px;
+    color: #999;
+}
+
+.canal p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 5px 0 0 0 ;
+    padding: 0;
+}
+.canal .title {
+    font-size: 16px;
+    display:block;
+    line-height: 110%;
+    padding: 0;
+}
+.single{
+    padding: 15px;
+    background: #fff;
+    overflow: hidden;
+}
+.single h1 {
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.single p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333;
+}
+.detalle {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333;
+}
+.detalle li {
+    margin-bottom: 5px;
+}
+
+.detalle span {
+    color: #666;
+}
+.content{
+    background: #313131;
+    background: -moz-linear-gradient(left, #313131 0%, #313131 46%, #222222 99%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#313131), color-stop(46%,#313131), color-stop(99%,#222222));
+    background: -webkit-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: -o-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: -ms-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#222222',GradientType=1 );
+    position: relative;
+    min-height:350px;
+}
+
+.tab {
+    display:block;
+    float: left;
+    width: 100%;
+    max-width: 640px;
+    min-width: 220px;
+    min-height: 1px;
+}
+
+
+.tab h1 {
+    display: block;
+    font-size: 16px;
+    height: 20px;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+    font-weight: bold;
+/*    padding: 20px 0 20px 35px;*/
+    
+}
+
+.tab h1.titleFicha {
+    width:75%;
+    float: left;
+    font-weight: bold;
+    color: #50B289;
+    overflow: hidden;
+    display:block;
+    height:auto;
+    margin-bottom:5px;
+}
+
+.tab span.canal {
+    width:75%;
+    float: left;
+    color:#fff;
+    clear:both;
+    font-size:12px;
+}
+
+.tab .pad {
+    padding: 20px 0 20px 60px;
+    border-bottom: 1px solid #000;
+}
+
+#geocode{
+	color: #fff;
+	display: block;
+        padding: 0 10px;
+}
+/*--------------------------------------------------------------------------------PROGRAMAS--*/
+
+.dateSelect {
+    padding: 10px;
+    border-top:1px solid #464545;
+    border-bottom:1px solid #000;
+}
+
+select.selectDays {
+    background: url('../img/mobile/selectbg.png') no-repeat left 50%;
+    width: 65px;
+    color: #fff;
+    border:0 none;
+    -webkit-appearance: none;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.channelTitle {
+    overflow: hidden;
+    position:relative;
+    padding: 12px;
+    border-bottom:1px solid #000;
+    background: #2C9AD0;
+}
+
+.channelTitle a.cancel {
+    margin: 5px 0 0 0;
+}
+
+.channelTitle img {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 10px;
+}
+
+.channelTitle h1 {
+    float: left;
+    display: block;
+    margin-top: 15px;
+}
+
+.channelTitle span.chnNum {
+    float:left;
+    margin: 15px 10px 0 0;
+    font-size: 16px;
+    color:#fff;
+    font-weight: bold;
+    text-shadow:rgba(0, 0, 0, 0.5) 1px 1px 1px;  
+}
+
+img.program_img {
+    float:left;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.channelTitle h2 {
+    display:block;
+    float:right;
+}
+
+.programa h2{
+    margin-top: 10px;
+    width: 90%;
+}
+
+span.horario {
+    float:left;
+    display: block;
+    margin-right:5px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+}
+
+span.rating {
+    float:left;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+}
+/*--------------------------------------------------------------------------------FICHA--*/
+
+h1.fichaTit {
+    display: block;
+    width: 70%;
+    float:left;
+    font-size: 14px;
+}
+
+a.cancel {
+    display: block;
+    background: url('../img/mobile/volver.png') no-repeat center;
+    padding: 10px 8px 0 0;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+    margin: 3px 0 0 0;
+    height: 25px;
+    width: 48px;
+    position:absolute;
+    right: 10px;
+}
+
+a.cancel:active, a.cancel:focus {
+    background: url('../img/mobile/volverb.png') no-repeat center;
+    color:#333333;
+}
+
+.imgFicha {
+    width:100%;
+    height:auto;
+}
+
+.tabWrap {
+    padding:10px;
+    overflow:hidden;
+    border-top: 1px solid #4D4D4D;
+}
+
+.tabWrap:last-child {
+    padding-top:0px;
+    border: 0 none;
+}
+
+.tabWrap h1{
+    font-size: 14px;
+    text-shadow: none;
+    padding-top: 10px;
+}
+
+.tabWrap p{
+    display:block;
+    width: 100%;
+    color: #999;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.marginTop{
+    margin-top: 10px;
+}
+
+.metaProgram {
+    margin-top: 5px;
+    position: relative;
+    height: 30px;
+    font-size: 13px;
+    color:#666;
+    font-weight: bold;
+    width:100%;
+}
+
+.duracion span{
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    color: #999;
+    margin-top: 3px;
+    width: 50%;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+span.watchlist {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #33CCFF;
+    cursor: pointer;
+}
+
+span.watchlist * {
+    vertical-align: middle;
+}
+
+.showItems {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+}
+
+.Item {
+    display:block;
+    margin: 5px 0 10px 0;
+    color:#999;
+    font-size: 12px;
+}
+
+.Item strong {
+    color:#fff;
+}
+
+.Item:last-child strong {
+    display:block;
+    margin-bottom: 10px;
+}
+
+pre {
+    color: white;
+}
+
+/*--------------------------------------------------------------------------------CONTENT--*/
+
+#contentLoad, #channelLoad, #programLoad, #firstLoad {
+    width: 100%;
+    overflow:hidden;
+    display:none;
+    position: absolute;
+    background: #313131;
+    background: -moz-linear-gradient(left, #313131 0%, #313131 46%, #222222 99%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#313131), color-stop(46%,#313131), color-stop(99%,#222222));
+    background: -webkit-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: -o-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: -ms-linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    background: linear-gradient(left, #313131 0%,#313131 46%,#222222 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#222222',GradientType=1 );
+}
+
+#firstLoad {
+    background: #010101;
+    padding-top:20px;
+    height:500px;
+    top:0;
+    position:fixed;
+}
+
+.firstLoadimg {
+    display:block;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------PREFERENCIAS--*/
+
+.prefTitle{
+    padding: 10px;
+    background: #2C9AD0;
+
+}
+
+.prefTitle h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.prefTitle span.subPref {
+    font-size: 12px;
+    color: #fff;
+}
+
+.gen-list .prefList{
+    position: relative;
+    background: none;
+}
+
+.gen-list .prefList.cate:first-child{
+    border-top:1px solid #494A49 !important;
+}
+
+.gen-list .cate label {
+    background: none;
+    float: left;
+    width: 90%;
+}
+
+input.categoria[type="checkbox"]{
+    float:right;  
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background: url('../img/mobile/checkPref.png') no-repeat right 50%;
+    width: 18px;
+    height: 17px;
+}
+
+input.categoria[type="checkbox"]:checked{
+    background: url('../img/mobile/favoritoscheck.png') no-repeat right 50%;
+}
+
+.gen-list .cate:last-child{
+    border-bottom: 0 none;
+}
+#programLoad li.programa {
+    position: relative;
+    color: #fff;
+    display:block;
+    overflow: hidden;
+    padding: 5px;
+    font-size: 14px;
+    text-shadow: rgba(0,0,0,.8) 1px 1px 1px; 
+}
+
+li.programa label {
+    display:block;
+    width: 90%;
+    font-weight: 14px;
+}   
+
+li.programa input {
+    position: absolute;
+    right:10px;
+    top:30px;
+}
+
+a.washlistLink {
+    background: none !important;
+    padding: 0 !important;
+}
+
+.watchTitle{
+    margin-top: 0 !important;
+}
+
+/*--------------------------------------------------------------------------------UBICACION--*/
+
+#geocode {
+   font-size: 14px;
+   color:#999; 
+   line-height: 12px;
+}
+
+
+#geocode h1 {
+    font-size: 18px;
+    color: #fff; 
+    text-shadow: rgba(0,0,0,.8) 1px 1px 1px;
+    font-weight: bold;
+    display:block;
+    padding: 15px 0 0 0;
+}
+
+#geocode .textoUb {
+    display:inline-block;
+    margin-top: 20px;
+    margin-right:5px;
+}
+
+#geocode .ubicacion {
+    font-weight: bold;
+    margin-top: 5px;
+    display:inline-block;
+    text-transform: lowercase;
+    width: 50%;
+}
+
+#geocode .ubicacion:first-letter {
+    text-transform: uppercase;
+}
+
+select#selectRegion, select#selectComuna {
+     -webkit-appearance: none;
+     -moz-appearance:none;
+     -o-appearance:none;
+     clear:both;
+     background: url('../img/mobile/selectbg2.png') no-repeat right #ffffff;
+     background: url('../img/mobile/selectbg2.png') no-repeat right, -moz-linear-gradient(top, #ffffff 0%, #999999 100%);
+     background: url('../img/mobile/selectbg2.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#999999));
+     background: url('../img/mobile/selectbg2.png') no-repeat right, -webkit-linear-gradient(top, #ffffff 0%,#999999 100%) ;
+     background: url('../img/mobile/selectbg2.png') no-repeat right, -o-linear-gradient(top, #ffffff 0%,#999999 100%) ;
+     background: url('../img/mobile/selectbg2.png') no-repeat right, -ms-linear-gradient(top, #ffffff 0%,#999999 100%) ;
+     background: url('../img/mobile/selectbg2.png') no-repeat right, linear-gradient(top, #ffffff 0%,#999999 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#999999',GradientType=0 ); 
+     border-radius:5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -o-border-radius: 5px;
+     border: 0 none;
+     height: 35px;
+     width: 200px;
+     margin-top: 10px;
+     text-indent: 10px;
+     font-size: 14px;
+     display: block;
+}
+
+.savebtn {
+    background: #666666;
+    background: -moz-linear-gradient(top, #666666 1%, #434343 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#666666), color-stop(100%,#434343));
+    background: -webkit-linear-gradient(top, #666666 1%,#434343 100%);
+    background: -o-linear-gradient(top, #666666 1%,#434343 100%);
+    background: -ms-linear-gradient(top, #666666 1%,#434343 100%);
+    background: linear-gradient(top, #666666 1%,#434343 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#434343',GradientType=0 );
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    width: 55px;
+}
+
+#horarios {
+    background: #000;
+    padding:40px 0;
+}
+
+p.horarioText {
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+    display:block;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.guiaTVlogo {
+    margin: 0 auto;
+    display:block;
+}
+
+.marketLogos{
+    margin:20px auto;
+    display:block;
+}
+
+.guiaTVlogo img {
+    margin: 10px auto;
+    display:block;
+}
+
+.disponible {
+    font-size: 12px;
+    color:#2C99D0;
+    display:block;
+    text-align: center;
+    margin:20px 0;
+}
+

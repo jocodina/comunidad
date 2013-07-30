@@ -1,0 +1,65 @@
+
+* {margin:0px;padding:0px;}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, address, a, li {margin: 0px;padding: 0px;}
+.footer_vtr {clear:both;width:100%;background-position:top left !important; background-color:#000; font-family:Arial, Verdana;position: absolute;float:left; background-repeat: repeat-x;padding-top:6px; }
+
+.footer_vtr-t0{ background-image:url("../../images/trama1.png") !important;  }
+.footer_vtr-t1{ background-image:url("../../images/trama2.png") !important;  }
+.footer_vtr-t2{ background-image:url("../../images/trama3.png") !important;  }
+.footer_vtr-t3{ background-image:url("../../images/trama4.png") !important;  }
+.footer_vtr-t4{ background-image:url("../../images/trama5.png") !important;  }
+.footer_vtr-t5{ background-image:url("../../images/trama6.png") !important;  }
+
+.footer_centrado {width:980px;margin-left:auto;margin-right:auto;padding:0;}
+.footer_contenidos {width:980px;float:left;padding:14px 0 14px 0;}
+.footer_contenidos td {width:137px; vertical-align: top; }
+.footer_td {background:url(../../images/bk_bco.jpg) no-repeat right 8px;}
+
+.footer_td1{}
+.footer_td2{ width:155px;}
+.footer_td2 .footer_links{    width: 142px; }
+.footer_td3{ width:130px; }
+.footer_td3 .footer_links{    width: 115px; }
+
+.footer_td4{ width: 112px !important; }
+.footer_td4 .footer_links{    width: 112px; }
+
+.footer_td5{ width: 89px !important; }
+.footer_td5 .footer_links{    width: 89px; padding-left: 0; }
+.footer_td6 .footer_links{    width: 101px; padding-left: 0; }
+ 
+.footer_links{ float:left; padding:4px 0 0 14px; width:139px; text-align:left; }
+
+.footer_links h1 {font-size:11px;color:#B1B2B2;margin:0;padding:0 0 6px 0;}
+.footer_links ul {list-style:none; margin-top:8px;}
+.footer_links li {list-style:none; font-size:11px; line-height: 1.2em;}
+.footer_links a {font-size:11px;color:#666666;text-decoration:none;}
+.footer_links a:hover {font-size:11px;color:#fff;text-decoration:none;}
+.footer_alto {margin-top:20px;}
+.footer_linea {margin:6px 0 6px 0;}
+.footer_accesos {width:160px; float:right;}
+.footer_accesos ul {list-style:none; margin:0px 20px 0 0px; padding:0px; }
+.footer_accesos ul li{ float: left;line-height: 1.2em;width: 100%;}
+.vtr_com a {background: url(../../images/logo_vtrcom_ngro.jpg) no-repeat right 0;width:154px;display: block;text-indent:-10000px;height:42px;font-size:9px; float:right; }
+.footer_numero{  font-size:11px; color:#666666; text-align:right; }
+.footer_portal a {display: block;height:15px;font-size:9px;     color: #666666; text-align:right;
+    font-size: 11px;
+    text-decoration: none;}
+.footer_portal a:hover {background-position: -88px 0;}
+.footer_mapa a {display: block;height:15px;font-size:9px;     color: #666666; text-align:right;
+    font-size: 11px;
+    text-decoration: none;}
+.footer_mapa a:hover {background-position: -97px 0;}
+
+.footer_legal {width:980px;height:52px;float:left;font-size:10px;color:#666666;}
+.footer_legal_texto {width:350px;float:left;font-size:10px;color:#666666;padding:16px 0 0 12px;}
+.footer_legal a {font-size:10px;color:#666666; text-decoration: none;}
+.footer_legal a:hover {font-size:10px;color:#666666;}
+
+.footer_logos_derecha {float:right;width:180px;padding-top:0px; background: url(../../images/bg-logos.png) no-repeat 0 0;}
+.footer_logos_derecha ul {list-style:none; margin:0px; padding:0px;}
+.footer_logos_derecha li {list-style:none; margin:0px; padding:0px;float:left;}
+.certifica a {background: url(../../images/logo_certifica.png) no-repeat 0 0;width:88px;display: block;text-indent:-10000px;height:24px; margin-top:3px; font-size:9px;}
+.iab a {background: url(../../images/logo_iab.png) no-repeat 0 0;width:49px;display: block;text-indent:-10000px;height:30px;margin-right:7px;font-size:9px;}
+.api a {background: url(../../images/logo_api.png) no-repeat 0 0;width:30px;display: block;text-indent:-10000px;height:30px;margin-right:7px;font-size:9px;}
+.gpw a {background: url(../../images/logo_gpw.png) no-repeat 0 0;width:26px;display: block;text-indent:-10000px;height:30px;margin-right:7px;font-size:9px;margin-left:15px;}

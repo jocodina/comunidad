@@ -1,0 +1,14 @@
+#icon-plugins.prospek-strings-sanitizer {
+	background: transparent url(../images/wp-icon-x32.png) no-repeat 0 0;
+}
+
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+
+a.btn {
+    text-decoration: none
+}

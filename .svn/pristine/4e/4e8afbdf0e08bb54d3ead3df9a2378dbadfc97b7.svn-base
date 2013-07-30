@@ -1,0 +1,12 @@
+fieldset {
+	border:none;
+}
+h3{
+	border-bottom: 1px dotted #CCC;
+	padding: 3px;
+	margin-top: 0;
+}
+ul.subSub li{
+	display: inline;
+
+}

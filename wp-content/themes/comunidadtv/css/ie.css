@@ -1,0 +1,21 @@
+a {
+	color:white;
+}
+.canales-on-demand-img img {
+		
+	width:90px!important;
+	height: auto;
+}
+.canales-on-demand-img a {
+	float: left;
+	width:90px!important;
+	display: block;
+	margin-right:22px;
+}
+.ls-mas-visto {
+	display: block;
+	height: 60px;
+}
+.ls-mas-visto a {
+	color:#333!important;
+}
